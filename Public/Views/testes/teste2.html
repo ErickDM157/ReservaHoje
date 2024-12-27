@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendário de Intervalo de Datas</title>
+    <!-- Flatpickr CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+
+        #dateButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #980000;
+            color: rgb(144, 0, 0);
+            border: none;
+            border-radius: 4px;
+        }
+
+        #dateButton:hover {
+            background-color: #0056b3;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <button id="dateButton">Selecione as Datas</button>
+    <div id="output"></div>
+
+    <!-- Flatpickr JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('dateButton');
+            const output = document.getElementById('output');
+
+            // Configuração do calendário
+            flatpickr(button, {
+                mode: "range", // Permite selecionar intervalo de datas
+                dateFormat: "d/m/Y", // Formato da data
+                onClose: (selectedDates, dateStr) => {
+                    if (selectedDates.length === 2) { // Verifica se o intervalo foi selecionado
+                        const startDate = selectedDates[0].toLocaleDateString('pt-BR');
+                        const endDate = selectedDates[1].toLocaleDateString('pt-BR');
+                        output.textContent = `Início: ${startDate} | Fim: ${endDate}`;
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>

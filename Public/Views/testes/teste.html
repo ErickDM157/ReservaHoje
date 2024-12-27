@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup Select</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        button {
+            margin: 20px;
+        }
+
+        #popup {
+            position: absolute;
+            display: none;
+            z-index: 10;
+            background: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            width: 250px;
+        }
+
+        #popup select {
+            width: 100%;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            outline: none;
+            padding: 5px;
+        }
+
+        #popup button.close {
+            background: #f44336;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        #popup button.close:hover {
+            background: #d32f2f;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #output {
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            width: 300px;
+        }
+    </style>
+</head>
+<div class="destino-popup hidden">
+    <select name="estado" id="estado">
+        <option value="">Selecione o Estado</option>
+    </select>
+    <select name="cidade" id="cidade">
+        <option value="">Selecione a Cidade</option>
+    </select>
+    <button class="botao">OK</button>
+</div>
+<body>
+    <button id="popupButton">Abrir Popup</button>
+    <div id="popup" class="hidden">
+        <select id="select1" size="6">
+            <option>Opção 1A</option>
+            <option>Opção 2A</option>
+            <option>Opção 3A</option>
+            <option>Opção 4A</option>
+            <option>Opção 5A</option>
+            <option>Opção 6A</option>
+        </select>
+        <select id="select2" size="6">
+            <option>Opção 1B</option>
+            <option>Opção 2B</option>
+            <option>Opção 3B</option>
+            <option>Opção 4B</option>
+            <option>Opção 5B</option>
+            <option>Opção 6B</option>
+        </select>
+        <button class="close" id="closePopup">Fechar</button>
+    </div>
+    <div id="output">
+        Selecione opções no popup.
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const button = document.getElementById('popupButton');
+            const popup = document.getElementById('popup');
+            const closeButton = document.getElementById('closePopup');
+            const select1 = document.getElementById('select1');
+            const select2 = document.getElementById('select2');
+            const output = document.getElementById('output');
+
+            // Exibir o popup ao clicar no botão
+            button.addEventListener('click', () => {
+                const rect = button.getBoundingClientRect();
+                popup.style.left = `${rect.left}px`;
+                popup.style.top = `${rect.bottom}px`;
+                popup.style.display = 'block';
+            });
+
+            // Fechar o popup ao clicar no botão Fechar
+            closeButton.addEventListener('click', () => {
+                popup.style.display = 'none';
+            });
+
+            // Atualizar o campo de saída quando um valor for selecionado
+            select1.addEventListener('change', () => {
+                updateOutput();
+            });
+
+            select2.addEventListener('change', () => {
+                updateOutput();
+            });
+
+            // Função para atualizar o campo de saída
+            function updateOutput() {
+                const selected1 = select1.value || 'Nenhuma';
+                const selected2 = select2.value || 'Nenhuma';
+                output.textContent = `Selecionado: [Select 1: ${selected1}, Select 2: ${selected2}]`;
+            }
+        });
+    </script>
+</body>
+</html>

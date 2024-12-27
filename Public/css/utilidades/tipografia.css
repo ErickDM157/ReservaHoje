@@ -1,0 +1,115 @@
+    /*
+        Fonte 1: Montserrat
+        Fonte 2: Roboto
+        Pesos: regular, bold
+        Estilos: normal, italic
+        Tamanhos: 
+            tt titulo
+            st subtitulo
+            line-height: 1.4x a 1.5x o tamanho do texto
+
+            t texto
+            p paragrafo
+            c complemento
+            line-height: 1x o tamanho do texto
+    */
+
+    /* Títulos */
+
+/* Títulos */
+
+.font-1-tt {
+    font: 400 3rem/1.2 "Montserrat", sans-serif;
+}
+
+.font-1-tt-bold {
+    font: 800 3rem/1.2 "Montserrat", sans-serif;
+}
+
+.font-1-st {
+    font: 400 2.4rem/1.2 "Montserrat", sans-serif;
+}
+
+.font-1-st-bold {
+    font: 800 2.4rem/1.2 "Montserrat", sans-serif;
+}
+
+/* Textos */
+
+.font-2-t {
+    font: 400 2rem/1.5 "Roboto", sans-serif;
+}
+
+.font-2-t-italic {
+    font: italic 400 2rem/1.5 "Roboto", sans-serif;
+}
+
+.font-2-t-bold {
+    font: 500 2rem/1.5 "Roboto", sans-serif;
+}
+
+.font-2-t-italic-bold {
+    font: italic 500 2rem/1.5 "Roboto", sans-serif;
+}
+
+.font-2-p {
+    font: 400 1.6rem/1.4 "Roboto", sans-serif;
+}
+
+.font-2-p-italic {
+    font: italic 400 1.6rem/1.4 "Roboto", sans-serif;
+}
+
+.font-2-p-bold {
+    font: 500 1.6rem/1.4 "Roboto", sans-serif;
+}
+
+.font-2-p-italic-bold {
+    font: italic 500 1.6rem/1.4 "Roboto", sans-serif;
+}
+
+.font-2-c {
+    font: 400 1.4rem/1.4 "Roboto", sans-serif;
+}
+
+.font-2-c-bold {
+    font: 500 1.4rem/1.4 "Roboto", sans-serif;
+}
+
+/* Ajustes para telas menores */
+
+@media (max-width: 800px) {
+    .font-1-tt, .font-1-tt-bold {
+        font-size: calc(3rem * 0.9); 
+    }
+    .font-1-st, .font-1-st-bold {
+        font-size: calc(2.4rem * 0.9);
+    }
+    .font-2-t, .font-2-t-italic, .font-2-t-bold, .font-2-t-italic-bold {
+        font-size: calc(2rem * 0.9); 
+    }
+    .font-2-p, .font-2-p-italic, .font-2-p-bold, .font-2-p-italic-bold {
+        font-size: calc(1.6rem * 0.9); 
+    }
+    .font-2-c, .font-2-c-bold {
+        font-size: calc(1.4rem * 0.9); 
+    }
+}
+
+@media (max-width: 400px) {
+    .font-1-tt, .font-1-tt-bold {
+        font-size: calc(3rem * 0.6);
+    }
+    .font-1-st, .font-1-st-bold {
+        font-size: calc(2.4rem * 0.6); 
+    }
+    .font-2-t, .font-2-t-italic, .font-2-t-bold, .font-2-t-italic-bold {
+        font-size: calc(2rem * 0.8); 
+    }
+    .font-2-p, .font-2-p-italic, .font-2-p-bold, .font-2-p-italic-bold {
+        font-size: calc(1.6rem * 0.8);
+    }
+    .font-2-c, .font-2-c-bold {
+        font-size: calc(1.4rem * 0.8); 
+    }
+}

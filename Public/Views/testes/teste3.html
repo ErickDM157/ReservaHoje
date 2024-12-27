@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botão com Ícone e Textos</title>
+    <style>
+        /* Estilo do botão */
+        .button {
+            display: flex;
+            align-items: center; /* Alinha o ícone e o texto verticalmente */
+            padding: 10px 15px;
+            background-color: #f0f0f0; /* Cor de fundo */
+            color: #333; /* Cor do texto */
+            border: 1px solid #ccc; /* Borda */
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 250px; /* Largura fixa para exemplo */
+        }
+
+        /* Estilo do ícone */
+        .button .icon {
+            font-size: 20px; /* Tamanho do ícone */
+            margin-right: 10px; /* Espaçamento entre o ícone e o texto */
+        }
+
+        /* Contêiner para os textos */
+        .text-container {
+            display: flex;
+            flex-direction: column; /* Empilha os textos verticalmente */
+            align-items: flex-start; /* Alinha os textos à esquerda */
+        }
+
+        /* Estilo do texto principal */
+        .text-container .main-text {
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+        /* Estilo do texto secundário */
+        .text-container .sub-text {
+            font-size: 12px;
+            color: #777;
+        }
+
+        /* Efeito hover */
+        .button:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Botão com ícone e textos -->
+    <button class="button" id="dynamicButton">
+        <span class="icon">👤</span>
+        <div class="text-container">
+            <span class="main-text">2 viajantes, 1 quarto</span>
+            <span class="sub-text">Viajantes</span>
+        </div>
+    </button>
+
+    <script>
+        // Exemplo de atualização dinâmica do texto principal
+        const button = document.getElementById('dynamicButton');
+
+        // Simula uma alteração no valor
+        setTimeout(() => {
+            const mainText = button.querySelector('.main-text');
+            mainText.textContent = '3 viajantes, 2 quartos';
+        }, 3000); // Atualiza após 3 segundos
+    </script>
+</body>
+</html>

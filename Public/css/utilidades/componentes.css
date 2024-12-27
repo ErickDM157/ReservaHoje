@@ -1,0 +1,75 @@
+.botao{
+    background-color: var(--cor-p2);
+    color: var(--cor-0);
+    height: 6rem;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 4rem;
+    transition: .2s ease-in;
+    box-sizing: border-box;
+    color: pointer;
+}
+.botao:hover{
+    background-color: var(--cor-p1);
+}
+
+
+.hidden{
+    display: none;
+}
+
+.buscar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem;
+    padding: 2rem 6rem;
+    box-sizing: border-box;
+    background-color: var(--cor-p1);
+    gap: 20px;
+    overflow: hidden;
+
+}
+
+.buscar .buscar-botao{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background-color: var(--cor-p1);
+    border: 2px solid var(--cor-p0);
+    color: var(--cor-1);
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    height: 6rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 1rem;
+    color: pointer;
+    transition: .2s ease-in;
+}
+.buscar .buscar-botao:hover{
+    background-color: var(--cor-p0);
+    cursor: pointer;
+}
+.buscar .buscar-botao img{
+    width: 2.5rem;
+    height: 2.5rem;
+}
+.buscar .botao-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.buscar a.botao{
+    background-color: var(--cor-p1);
+    border: 2px solid var(--cor-p0);
+    height: 6rem;
+}
+.buscar a.botao:hover{
+    background-color: var(--cor-p0);
+    cursor: pointer;
+}
