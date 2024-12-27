@@ -21,17 +21,17 @@
 </head>
 
 <body>
-    <div class="cadastro-wrapper">
-        <div class="coluna2">
-            <h2>Cadastro</h2>
-            <form class="form-wrapper">
+    <main class="formulario-wrapper">
+        <form class="formulario cadastro">
+            <h2 class="font-1-tt-bold">Cadastro</h2>
+            <div class="campo-wrapper">
                 <div class="input-box">
                     <input type="text" id="name" placeholder="Insira seu nome" />
                     <p class="alert">Nome inválido</p>
                 </div>
                 <div class="input-box">
                     <input type="email" id="email" placeholder="Insira seu email" />
-                    <p class="alert">Email incorreto ou não cadasrado.</p>
+                    <p class="alert">Email incorreto ou não cadastrado.</p>
                 </div>
                 <div class="input-box">
                     <input type="password" id="password" placeholder="Insira sua senha" />
@@ -47,28 +47,24 @@
                 </div>
                 <div class="input-box">
                     <select id="gender">
-                        <option value="" disabled selected>
-                            Selecione
-                        </option>
+                        <option value="" disabled selected>Selecione</option>
                         <option value="male">Masculino</option>
                         <option value="female">Feminino</option>
                     </select>
                 </div>
-                <button type="submit" class="btn-submit">Cadastrar</button>
-            </form>
+                <button type="submit">Cadastrar</button>
+            </div>
             <p>ou</p>
-            <a href="/"><button type="button" class="google">Google</button></a>
-        </div>
-
-        
-        <div class="coluna1">
+            <a href="/">Google</a>
+        </form>
+        <div class="form-coluna">
             <div class="text-box">
-                <h1 class="text1">Ja tem uma conta?</h1>
-                <p class="text2">Faça login para gerenciar suas reservas e garantir sua próxima estadia com facilidade. </p>
-                <a href="./login.html"><button class="login">Faca o Login</button></a>
+                <h2 class="text1 font-1-tt-bold">Já tem uma conta?</h2>
+                <p class="text2 font-2-t">Faça login para gerenciar suas reservas e garantir sua próxima estadia com facilidade.</p>
+                <a href="./login.html" class="botao font-2-t">Faça o Login</a>
             </div>
         </div>
-    </div>
+    </main>    
 </body>
 
 </html>
