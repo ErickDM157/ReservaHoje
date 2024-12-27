@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <meta name="description"
+        content="Reserve sua estadia com facilidade e segurança em nosso site. Encontre os melhores hotéis, resorts e acomodações, com opções para todos os gostos e orçamentos. Faça sua reserva agora e garanta a melhor experiência para sua viagem." />
+    <link rel="icon" href="/Public/logo.svg" type="image/svg+xml" />
+
+    <link rel="preload" href="/Public/css/style.css" as="style" />
+    <link rel="stylesheet" href="/Public/css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;800&family=Roboto:ital,wght@0,400;0,500;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="cadastro-wrapper">
+        <div class="coluna2">
+            <h2>Cadastro</h2>
+            <form class="form-wrapper">
+                <div class="input-box">
+                    <input type="text" id="name" placeholder="Insira seu nome" />
+                    <p class="alert">Nome inválido</p>
+                </div>
+                <div class="input-box">
+                    <input type="email" id="email" placeholder="Insira seu email" />
+                    <p class="alert">Email incorreto ou não cadasrado.</p>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password" placeholder="Insira sua senha" />
+                    <p class="alert"></p>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="confirm-password" placeholder="Confirme sua senha" />
+                    <p class="alert">As senhas não coincidem</p>
+                </div>
+                <div class="input-box">
+                    <input type="number" id="age" placeholder="Insira sua idade" />
+                    <p class="alert">Informe uma idade válida</p>
+                </div>
+                <div class="input-box">
+                    <select id="gender">
+                        <option value="" disabled selected>
+                            Selecione
+                        </option>
+                        <option value="male">Masculino</option>
+                        <option value="female">Feminino</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn-submit">Cadastrar</button>
+            </form>
+            <p>ou</p>
+            <a href="/"><button type="button" class="google">Google</button></a>
+        </div>
+
+        
+        <div class="coluna1">
+            <div class="text-box">
+                <h1 class="text1">Ja tem uma conta?</h1>
+                <p class="text2">Faça login para gerenciar suas reservas e garantir sua próxima estadia com facilidade. </p>
+                <a href="./login.html"><button class="login">Faca o Login</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

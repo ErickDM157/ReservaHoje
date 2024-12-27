@@ -14,3 +14,9 @@
 
 /* Home */
 @import "./home/start.css";
+
+/* Cadastro - Login */
+@import "./cadastro-login/c-campo.css";
+@import "./cadastro-login/c-formulario.css";
+@import "./cadastro-login/l-campo.css";
+@import "./cadastro-login/l-formulario.css";
