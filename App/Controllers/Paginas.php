@@ -5,7 +5,7 @@ class Paginas extends Controller{
         Url::redirecionar('posts');
       endif;
       $dados = ['titulo'=>'Pagina Inicial',
-                 'descricao'=> 'Aula de PHP'
+                 'descricao'=> 'Site Reservas'
                ];
         $this->view('pagina/home', $dados);
     }
