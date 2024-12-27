@@ -2,8 +2,8 @@
 class Database{
     private $host = "localhost";
     private $usuario = "root";
-    private $senha = "";
-    private $banco = "blogaula";
+    private $senha = "root";
+    private $banco = "sistemareservas";
     private $porta = "3306"; //verificar a porta do seu banco
     private $dbh;
     private $stmt;

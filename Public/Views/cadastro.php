@@ -9,8 +9,8 @@
         content="Reserve sua estadia com facilidade e segurança em nosso site. Encontre os melhores hotéis, resorts e acomodações, com opções para todos os gostos e orçamentos. Faça sua reserva agora e garanta a melhor experiência para sua viagem." />
     <link rel="icon" href="/Public/logo.svg" type="image/svg+xml" />
 
-    <link rel="preload" href="/Public/css/style.css" as="style" />
-    <link rel="stylesheet" href="/Public/css/style.css" />
+    <link rel="preload" href=".//css/style.css" as="style" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
