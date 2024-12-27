@@ -7,7 +7,7 @@ class Usuario{
         $this->db = new Database();
     }  //fim do construtor
     public function armazenar($dados){
-        $this->db->query("INSERT INTO usuarios(nome, email, senha) VALUES (:nome, :email, :senha)");
+        $this->db->query("INSERT INTO usuarios(clie_nome, clie_email, clie_senha, clie_idade, clie_sexo) VALUES (:nome, :email, : )");
 
         $this->db->bind('nome', $dados['nome']);
         $this->db->bind('email', $dados['email']);
