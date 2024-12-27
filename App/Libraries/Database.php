@@ -2,7 +2,7 @@
 class Database{
     private string $host = "localhost";
     private string $usuario = "root";
-    private string $senha = "";
+    private string $senha = "1213";
     private string $banco = "blogaula";
     private string $porta = "3306"; // Verificar a porta do seu banco
     private PDO $dbh;
