@@ -43,7 +43,6 @@
                     <input type="password" id="confirm-password" placeholder="Confirme sua senha" />
                     <p class="hidden alert">As senhas não coincidem</p>
                 </div>
-                <br>
                 <div class="input-box">
                     <input type="number" id="age" placeholder="Insira sua idade" />
                     <p class="hidden alert">Informe uma idade válida</p>
