@@ -17,8 +17,9 @@ class Usuarios extends Controller
             $dados = [
                 'nome' => trim($formulario['nome']),
                 'email' => trim($formulario['email']),
+                'telefone' => trim($formulario['telefone']),
                 'senha' => trim($formulario['senha']),
-                'confirma_senha' => trim($formulario['confirma_senha']),
+                'confirma_senha' => trim($formulario['confirmar_senha']),
                 'idade' => trim($formulario['idade']),
                 'genero' => trim($formulario['genero']),
                 'nome_erro' => '',
@@ -39,12 +40,16 @@ class Usuarios extends Controller
                     $dados['email_erro'] = 'Preencha o campo e-mail';
                 endif;
 
+                if (empty($formulario['telefone'])) :
+                    $dados['nome_erro'] = 'Insira um telefone';
+                endif;
+
                 if (empty($formulario['senha'])) :
                     $dados['senha_erro'] = 'Preencha o campo senha';
                 endif;
 
-                if (empty($formulario['confirma_senha'])) :
-                    $dados['confirma_senha_erro'] = 'Confirme a senha';
+                if (empty($formulario['confirmar_senha'])) :
+                    $dados['confirmar_senha_erro'] = 'Confirme a senha';
                 endif;
 
                 if (empty($formulario['idade'])) :

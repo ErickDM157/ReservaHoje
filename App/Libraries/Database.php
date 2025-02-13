@@ -1,22 +1,12 @@
 <?php
 class Database{
-<<<<<<< HEAD
-    private string $host = "localhost";
-    private string $usuario = "root";
-    private string $senha = "1213";
-    private string $banco = "blogaula";
-    private string $porta = "3306"; // Verificar a porta do seu banco
-    private PDO $dbh;
-    private PDOStatement $stmt;
-=======
     private $host = "localhost";
     private $usuario = "root";
-    private $senha = "root";
+    private $senha = "1234";
     private $banco = "sistemareservas";
     private $porta = "3306"; //verificar a porta do seu banco
     private $dbh;
     private $stmt;
->>>>>>> 93dd7819004b4a44b421240cd3b77d821240e5f8
 
     public function __construct(){
         // Fonte de dados ou DNS que contém as informações para conectar ao banco de dados.

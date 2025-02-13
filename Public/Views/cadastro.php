@@ -26,28 +26,36 @@
             <h2 class="font-1-tt-bold">Cadastro</h2>
             <div class="campo-wrapper">
                 <div class="input-box">
-                    <input type="text" id="name" placeholder="Insira seu nome" />
+                    <input type="text" name="name" placeholder="Insira seu nome" />
                     <p class="alert">Nome inválido</p>
                 </div>
                 <div class="input-box">
-                    <input type="email" id="email" placeholder="Insira seu email" />
+                    <input type="email" name="email" placeholder="Insira seu email" />
                     <p class="alert">Email incorreto ou não cadastrado.</p>
                 </div>
+
                 <div class="input-box">
-                    <input type="password" id="password" placeholder="Insira sua senha" />
+                    <input type="number" name="telefone" placeholder="Telefone" />
+                    <p class="alert">Telefone inválido</p>
+                </div>
+
+                <div class="input-box">
+                    <input type="password" name="senha" placeholder="Insira sua senha" />
                     <p class="alert"></p>
                 </div>
+
                 <div class="input-box">
-                    <input type="password" id="confirm-password" placeholder="Confirme sua senha" />
+                    <input type="password" name="confirmar_senha" placeholder="Confirme sua senha" />
                     <p class="alert">As senhas não coincidem</p>
                 </div>
+                <br>
                 <div class="input-box">
-                    <input type="number" id="age" placeholder="Insira sua idade" />
+                    <input type="number" name="idade" placeholder="Insira sua idade" />
                     <p class="alert">Informe uma idade válida</p>
                 </div>
                 <div class="input-box">
-                    <select id="gender">
-                        <option value="" disabled selected>Selecione</option>
+                    <select name="genero">
+                        <option value="" disabled selected>Sexo</option>
                         <option value="male">Masculino</option>
                         <option value="female">Feminino</option>
                     </select>

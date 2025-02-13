@@ -19,11 +19,11 @@
 
 </head>
 <body>
-<<<<<<<< HEAD:Public/index.php
+<!--<<<<<<<< HEAD:Public/index.php
 ========
 <h1>aaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
 >>>>>>>> 6fdc62f (teste):Public/indexp.php
-
+-->
     <header class="header-bg">
         <div class="header container">
             <div class="navbar">
@@ -40,7 +40,7 @@
             <nav class="font-2-p cor-0">
                 <a href=""><img src="./img/icones/header/notificacao.svg" alt="Ícone de Notificações">Notificações</a>
                 <a class="botao" href="./Views/cadastro.php">Cadastre-se</a>
-                <a class="botao" href="">Login</a>
+                <a class="botao" href="./Views/login.html">Login</a>
             </nav>
         </div>
     </header>
