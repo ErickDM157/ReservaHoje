@@ -1,12 +1,4 @@
-<<<<<<< HEAD
-@import "root.css";
-body{
-    padding-bottom: 0px;
-}
-.login-wrapper{
-=======
 .login .formulario-wrapper{
->>>>>>> ee83efb299a3664fb6b79fe9cc1f5b9cc129894f
     display: grid;
     grid-template-columns: 5fr 3fr;
     background: var(--cor-p3);
@@ -41,18 +33,4 @@ body{
     .login .formulario p{
         margin-top: 30px;
     }
-<<<<<<< HEAD
-    .input-box {
-        grid-column: span 2; 
-        position: sticky;
-        display: flex;
-        flex-direction: column;
-    }
-    .input-box :nth-child(2){
-        position: absolute;
-        right: 0; 
-        top: 48px;  
-    }
-=======
->>>>>>> ee83efb299a3664fb6b79fe9cc1f5b9cc129894f
 }
