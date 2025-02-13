@@ -22,14 +22,11 @@
 </head>
 
 <body class="login">
+
     <main class="formulario-wrapper">
         <form class="formulario cadastro">
-            <h2 class="font-1-tt-bold">Cadastro</h2>
+            <h2 class="font-1-tt-bold">Fazer Login</h2>
             <div class="campo-wrapper font-2-t">
-                <div class="input-box">
-                    <input type="text" id="name" placeholder="Insira seu nome" />
-                    <p class="hidden alert">Nome inválido</p>
-                </div>
                 <div class="input-box">
                     <input type="email" id="email" placeholder="Insira seu email" />
                     <p class="hidden alert">Email incorreto ou não cadastrado.</p>
@@ -38,32 +35,17 @@
                     <input type="password" id="password" placeholder="Insira sua senha" />
                     <p class="hidden alert">A senha deve conter pelo menos 8 caractéres</p>
                 </div>
-                <div class="input-box">
-                    <input type="password" id="confirm-password" placeholder="Confirme sua senha" />
-                    <p class="hidden alert">As senhas não coincidem</p>
-                </div>
-                <div class="input-box">
-                    <input type="number" id="age" placeholder="Insira sua idade" />
-                    <p class="hidden alert">Informe uma idade válida</p>
-                </div>
-                <div class="input-box">
-                    <select id="gender">
-                        <option value="" disabled selected>Selecione</option>
-                        <option value="male">Masculino</option>
-                        <option value="female">Feminino</option>
-                    </select>
-                </div>
                 <button class="botao font-2-p" type="submit">Cadastrar</button>
             </div>
         </form>
         <div class="form-coluna">
             <div class="text-box">
-                <h2 class="text1 font-1-tt-bold">Já tem uma conta?</h2>
-                <p class="text2 font-2-t">Faça login para gerenciar suas reservas e garantir sua próxima estadia com facilidade.</p>
+                <h2 class="text1 font-1-tt-bold">Não tem uma conta?</h2>
+                <p class="text2 font-2-t">Crie uma conta agora e descubra as melhores opções de hospedagem. Reservar nunca foi tão fácil!</p>
                 <a href="./cadastro.php" class="form-coluna-botao botao font-2-t">Faça o Login</a>
             </div>
         </div>
-    </main>    
+    </main>
+    <a class="cadastro-login-voltar font-2-t-bold" href="../index.php"><img class="seta" src="../img/icones/cadastro-login/seta.svg" alt="seta voltar">Início</a>
 </body>
-
 </html>

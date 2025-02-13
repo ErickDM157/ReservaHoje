@@ -35,6 +35,10 @@
                     <p class="hidden alert">Email incorreto ou não cadastrado.</p>
                 </div>
                 <div class="input-box">
+                    <input type="number" id="telefone" placeholder="Insira seu telefone" />
+                    <p class="hidden alert">Telefone inváliido.</p>
+                </div>
+                <div class="input-box">
                     <input type="password" id="password" placeholder="Insira sua senha" />
                     <p class="hidden alert">A senha deve conter pelo menos 8 caractéres</p>
                 </div>
@@ -64,7 +68,8 @@
                 <a href="./login.php" class="form-coluna-botao botao font-2-t">Faça o Login</a>
             </div>
         </div>
-    </main>    
+    </main>
+    <a class="cadastro-login-voltar font-2-t-bold" href="../index.php"><img class="seta" src="../img/icones/cadastro-login/seta-white.svg" alt="seta voltar">Início</a>
 </body>
-
+<script src="../js/formulario-seta-cor.js"></script>
 </html>

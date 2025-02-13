@@ -19,14 +19,6 @@
 
 </head>
 <body>
-<<<<<<< HEAD
-<!--<<<<<<<< HEAD:Public/index.php
-========
-<h1>aaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
->>>>>>>> 6fdc62f (teste):Public/indexp.php
--->
-=======
->>>>>>> ee83efb299a3664fb6b79fe9cc1f5b9cc129894f
     <header class="header-bg">
         <div class="header container">
             <div class="navbar">
@@ -43,7 +35,7 @@
             <nav class="font-2-p cor-0">
                 <a href=""><img src="./img/icones/header/notificacao.svg" alt="Ícone de Notificações">Notificações</a>
                 <a class="botao" href="./Views/cadastro.php">Cadastre-se</a>
-                <a class="botao" href="./Views/login.html">Login</a>
+                <a class="botao" href="./Views/login.php">Login</a>
             </nav>
         </div>
     </header>
