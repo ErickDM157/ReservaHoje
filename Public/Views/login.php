@@ -21,66 +21,34 @@
 
 </head>
 
-<body>
+<body class="login">
     <main class="formulario-wrapper">
         <form class="formulario cadastro">
             <h2 class="font-1-tt-bold">Cadastro</h2>
             <div class="campo-wrapper font-2-t">
                 <div class="input-box">
-<<<<<<< HEAD
-                    <input type="text" name="name" placeholder="Insira seu nome" />
-                    <p class="alert">Nome inválido</p>
-                </div>
-                <div class="input-box">
-                    <input type="email" name="email" placeholder="Insira seu email" />
-                    <p class="alert">Email incorreto ou não cadastrado.</p>
-=======
                     <input type="text" id="name" placeholder="Insira seu nome" />
                     <p class="hidden alert">Nome inválido</p>
                 </div>
                 <div class="input-box">
                     <input type="email" id="email" placeholder="Insira seu email" />
                     <p class="hidden alert">Email incorreto ou não cadastrado.</p>
->>>>>>> ee83efb299a3664fb6b79fe9cc1f5b9cc129894f
                 </div>
-
                 <div class="input-box">
-<<<<<<< HEAD
-                    <input type="number" name="telefone" placeholder="Telefone" />
-                    <p class="alert">Telefone inválido</p>
-                </div>
-
-                <div class="input-box">
-                    <input type="password" name="senha" placeholder="Insira sua senha" />
-                    <p class="alert"></p>
-=======
                     <input type="password" id="password" placeholder="Insira sua senha" />
                     <p class="hidden alert">A senha deve conter pelo menos 8 caractéres</p>
->>>>>>> ee83efb299a3664fb6b79fe9cc1f5b9cc129894f
                 </div>
-
                 <div class="input-box">
-<<<<<<< HEAD
-                    <input type="password" name="confirmar_senha" placeholder="Confirme sua senha" />
-                    <p class="alert">As senhas não coincidem</p>
-=======
                     <input type="password" id="confirm-password" placeholder="Confirme sua senha" />
                     <p class="hidden alert">As senhas não coincidem</p>
->>>>>>> ee83efb299a3664fb6b79fe9cc1f5b9cc129894f
                 </div>
-                <br>
                 <div class="input-box">
-<<<<<<< HEAD
-                    <input type="number" name="idade" placeholder="Insira sua idade" />
-                    <p class="alert">Informe uma idade válida</p>
-=======
                     <input type="number" id="age" placeholder="Insira sua idade" />
                     <p class="hidden alert">Informe uma idade válida</p>
->>>>>>> ee83efb299a3664fb6b79fe9cc1f5b9cc129894f
                 </div>
                 <div class="input-box">
-                    <select name="genero">
-                        <option value="" disabled selected>Sexo</option>
+                    <select id="gender">
+                        <option value="" disabled selected>Selecione</option>
                         <option value="male">Masculino</option>
                         <option value="female">Feminino</option>
                     </select>
@@ -92,7 +60,7 @@
             <div class="text-box">
                 <h2 class="text1 font-1-tt-bold">Já tem uma conta?</h2>
                 <p class="text2 font-2-t">Faça login para gerenciar suas reservas e garantir sua próxima estadia com facilidade.</p>
-                <a href="./login.php" class="form-coluna-botao botao font-2-t">Faça o Login</a>
+                <a href="./cadastro.php" class="form-coluna-botao botao font-2-t">Faça o Login</a>
             </div>
         </div>
     </main>    

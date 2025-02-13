@@ -1,6 +1,7 @@
 .botao{
     background-color: var(--cor-p2);
     color: var(--cor-0);
+    border: 0px;
     height: 6rem;
     border-radius: 1rem;
     display: flex;
@@ -10,6 +11,7 @@
     transition: .2s ease-in;
     box-sizing: border-box;
     color: pointer;
+    box-shadow: var(--cor-sombra);
 }
 .botao:hover{
     background-color: var(--cor-p1);

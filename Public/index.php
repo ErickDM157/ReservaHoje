@@ -19,11 +19,14 @@
 
 </head>
 <body>
+<<<<<<< HEAD
 <!--<<<<<<<< HEAD:Public/index.php
 ========
 <h1>aaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
 >>>>>>>> 6fdc62f (teste):Public/indexp.php
 -->
+=======
+>>>>>>> ee83efb299a3664fb6b79fe9cc1f5b9cc129894f
     <header class="header-bg">
         <div class="header container">
             <div class="navbar">
