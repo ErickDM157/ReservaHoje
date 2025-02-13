@@ -19,11 +19,6 @@
 
 </head>
 <body>
-<<<<<<<< HEAD:Public/index.php
-========
-<h1>aaaaaaaaaaaaaaaaaaaaaaaaaaa</h1>
->>>>>>>> 6fdc62f (teste):Public/indexp.php
-
     <header class="header-bg">
         <div class="header container">
             <div class="navbar">

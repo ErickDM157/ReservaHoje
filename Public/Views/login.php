@@ -21,7 +21,7 @@
 
 </head>
 
-<body>
+<body class="login">
     <main class="formulario-wrapper">
         <form class="formulario cadastro">
             <h2 class="font-1-tt-bold">Cadastro</h2>
@@ -60,7 +60,7 @@
             <div class="text-box">
                 <h2 class="text1 font-1-tt-bold">Já tem uma conta?</h2>
                 <p class="text2 font-2-t">Faça login para gerenciar suas reservas e garantir sua próxima estadia com facilidade.</p>
-                <a href="./login.php" class="form-coluna-botao botao font-2-t">Faça o Login</a>
+                <a href="./cadastro.php" class="form-coluna-botao botao font-2-t">Faça o Login</a>
             </div>
         </div>
     </main>    
