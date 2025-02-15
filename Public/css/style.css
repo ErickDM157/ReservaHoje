@@ -26,3 +26,6 @@
 /* Favoritos */
 @import "./favoritos/favoritos.css";
 @import "./favoritos/semFavoritos.css";
+
+/* Conta */
+@import "./conta/contaConfigOpcoes.css";
