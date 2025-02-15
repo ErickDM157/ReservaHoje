@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="pt-be">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HEADER</title>
+    <title>Reservas</title>
     <meta name="description"
         content="Reserve sua estadia com facilidade e segurança em nosso site. Encontre os melhores hotéis, resorts e acomodações, com opções para todos os gostos e orçamentos. Faça sua reserva agora e garanta a melhor experiência para sua viagem." />
     <link rel="icon" href="/Public/logo.svg" type="image/svg+xml" />
 
-    <link rel="preload" href=".//css/style.css" as="style" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preload" href="/Public/css/style.css" as="style" />
+    <link rel="stylesheet" href="/Public/css/style.css" />
+    <link rel="stylesheet" href="/Public/css/utilidades/tipografia.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +22,7 @@
 </head>
 
 <body>
-    <header class="header-bg">
+<header class="header-bg">
         <div class="header container">
             <div class="navbar">
                 <div class="logo">
@@ -46,37 +47,19 @@
 
     </header>
 
-
-    <main class="start-bg">
-        <div class="start container">
-            <h1 class="title font-1-tt-bold">Encontre o Destino Perfeito no Brasil!</h1>
-            <p class="subtitle font-1-st">Preencha para uma experencia personalizada e única </p>
-            <div class="buscar">
-                <button class="buscar-botao">
-                    <img src="./img/icones/localizacao.svg" alt="ícone de localização">
-                    <div class="botao-box">
-                        <span class="texto-principal font-2-p-bold">Para onde você vai?</span>
-                        <span class="texto-conteudo font-2-t">São Paulo</span>
-                    </div>
-                </button>
-                <button class="buscar-botao">
-                    <img src="./img/icones/localizacao.svg" alt="">
-                    <div class="botao-box">
-                        <span class="texto-principal font-2-p-bold">Datas</span>
-                        <span class="texto-conteudo font-2-t">01 de jan. - 07 de jan.</span>
-                    </div>
-                </button>
-                <button class="buscar-botao">
-                    <img src="./img/icones/localizacao.svg" alt="">
-                    <div class="botao-box">
-                        <span class="texto-principal font-2-p-bold">viajantes</span>
-                        <span class="texto-conteudo font-2-t">2 viajantes, 1 quarto</span>
-                    </div>
-                </button>
-                <a href="" class="botao font-2-t">Buscar</a>
-            </div>
+    <main class="semFavoritos container">
+        <h1 class="font-1-st-bold">Suas reservas favoritas aparecerão aqui!</h1>
+        <p class="font-2-p">Está página irá mostrar as suas reservas salvas</p>
+        <div class="box">
+            <img src="/Public/img/favoritos/favoritoCoracao.svg" alt="Globo decorativo">
         </div>
-
+        <div class="comoSalvar">
+            <p class="font-2-p-bold">Como salvar?</p>
+            <p class="font-2-p">1° Selecione uma acomodação que você goste</p>
+            <p class="font-2-p">2° Aperte no ícone de coração ♡</p>
+            <p class="font-2-p">3° Veja suas reservas nesta página</p>
+        </div>
     </main>
-    <script src="./js/header.js"></script>
+    <script src="/Public/js/header.js"></script>
 </body>
+</html>

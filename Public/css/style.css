@@ -16,7 +16,13 @@
 @import "./home/start.css";
 
 /* Cadastro - Login */
-@import "./cadastro-login/campo.css";
 @import "./cadastro-login/formulario.css";
 @import "./cadastro-login/login.css";
-@import "./cadastro-login/cadastro.css";
+
+/* Reservas */
+@import "./reservas/suasReservas.css";
+@import "./reservas/semReservas.css";
+
+/* Favoritos */
+@import "./favoritos/favoritos.css";
+@import "./favoritos/semFavoritos.css";

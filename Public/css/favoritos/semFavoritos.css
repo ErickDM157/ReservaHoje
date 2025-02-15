@@ -1,0 +1,62 @@
+.semFavoritos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; 
+    text-align: center;
+    height: auto;
+    border: 2px solid var(--cor-2);
+    border-radius: 2rem;
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+    width: calc(100% - 3rem);
+}
+
+.semFavoritos h1 {
+    color: var(--cor-p2);
+    margin-top: 3rem;
+}
+
+.semFavoritos p:first-of-type{
+    color: var(--cor-10);
+    margin-top: 1.5rem;
+}
+
+.semFavoritos .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0px;
+}
+.semFavoritos .box img{
+    max-width: 37.2rem;
+    max-height: auto;
+    width: 100%;
+}
+
+
+@media (max-width: 800px) {
+    .semFavoritos .box img {
+        max-width: 24rem;
+    }    
+    .semFavoritos h1, p:first-of-type{
+        margin-top: 2.4rem;
+        max-width: 35rem;
+    }
+    .semFavoritos p:not(:first-of-type) {
+        margin-top: 0; 
+    }
+    
+}
+@media (max-width: 400px) {
+    .semFavoritos .box img {
+        max-width: 16rem;
+    }    
+    .semFavoritos h1, p:first-of-type{
+        margin-top: 1.5rem;
+        max-width: 20rem;
+    }
+    .semFavoritos p:not(:first-of-type) {
+        margin-top: 0; 
+    }
+}
