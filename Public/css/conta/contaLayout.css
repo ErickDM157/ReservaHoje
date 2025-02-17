@@ -1,0 +1,144 @@
+.contaLayout {
+    display: grid;
+    grid-template-columns: 2;
+    margin-top: 6rem;
+}
+
+.contaLayout h1 {
+    color: var(--cor-p2);
+}
+
+.contaLayout p {
+    margin-top: 0.5rem;
+}
+
+.contaLayout .titulos {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+}
+
+.contaLayout .wrapper {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 3rem;
+    gap: 3rem;
+}
+
+.contaLayout .opcoesConta,
+.opcoesConfiguracao {
+    padding: 1.5rem 0.5rem 3rem 1.5rem;
+    border: 2px solid var(--cor-2);
+    border-radius: 1.5rem;
+}
+
+.contaLayout .opcoesConta .opcao {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 3rem;
+}
+
+.contaLayout .opcoesConta .opcao .bg-img {
+    background-color: var(--cor-p0);
+    max-width: 4rem;
+    max-height: 4rem;
+    padding: 1rem;
+    border-radius: 50%;
+}
+
+.contaLayout .opcoesConta .opcao a:hover {
+    font-weight: 500;
+    text-decoration: underline;
+    text-decoration-color: var(--cor-p3);
+}
+
+.contaLayout .opcoesConta .opcao:first-child .bg-img {
+    background-color: var(--cor-3);
+}
+
+.contaLayout .opcoesConta .opcao:first-child a {
+    color: var(--cor-3);
+}
+
+.contaLayout .opcoesConta .opcao:first-child a:hover {
+    text-decoration: none;
+    font-weight: 400;
+    cursor: default;
+}
+
+.contaLayout .configuracaoWrapper {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+}
+
+.contaLayout .informacao {
+    font-weight: 500;
+}
+
+.contaLayout .cor {
+    color: var(--cor-5);
+    font-weight: 600;
+}
+
+.contaLayout .editarBox {
+    display: flex;
+    justify-content: space-between;
+    align-self: center;
+    height: 4rem;
+}
+
+.contaLayout .editarBox .botao {
+    width: auto;
+    height: 4rem;
+}
+
+@media (max-width: 800px) {
+    .contaLayout .configuracaoWrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .contaLayout .editarBox {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .contaLayout .editarBox .dado {
+        flex: 1;
+    }
+
+    .contaLayout .editarBox .botao {
+        white-space: nowrap;
+    }
+}
+
+@media (max-width: 700px) {
+    .contaLayout .contaConfig .wrapper {
+        grid-template-columns: 1fr;
+    }
+
+    .contaLayout .editarBox {
+        flex-direction: column;
+    }
+    .contaLayout .botao{
+        width: 100px;
+    }
+}
+
+@media (max-width: 500px) {
+    .contaConfig h1 {
+        margin-top: 4rem;
+    }
+
+    .contaConfig p {
+        margin-top: 0.3rem;
+    }
+
+    .contaConfig .wrapper {
+        margin-top: 2rem;
+    }
+}
