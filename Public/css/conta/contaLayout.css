@@ -71,6 +71,7 @@
     margin-top: 20px;
     display: grid;
     grid-template-columns: 1fr 3fr;
+    height: auto;
 }
 
 .contaLayout .informacao {
@@ -100,34 +101,26 @@
         flex-direction: column;
         align-items: flex-start;
     }
-
+    .contaLayout .opcoesConfiguracao{
+        gap: 20px;
+    }
+    
     .contaLayout .editarBox {
         display: flex;
+        flex-direction: column;
         justify-content: space-between;
         width: 100%;
+        
+    }
+    .contaLayout .editarBox .botao{
+        max-width: 200px;
     }
 
-    .contaLayout .editarBox .dado {
-        flex: 1;
-    }
+    
 
-    .contaLayout .editarBox .botao {
-        white-space: nowrap;
-    }
+
 }
 
-@media (max-width: 700px) {
-    .contaLayout .contaConfig .wrapper {
-        grid-template-columns: 1fr;
-    }
-
-    .contaLayout .editarBox {
-        flex-direction: column;
-    }
-    .contaLayout .botao{
-        width: 100px;
-    }
-}
 
 @media (max-width: 500px) {
     .contaConfig h1 {
