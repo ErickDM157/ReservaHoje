@@ -1,7 +1,8 @@
 .contaLayout {
     display: grid;
-    grid-template-columns: 2;
+    grid-template-columns: 3fr 7fr;
     margin-top: 6rem;
+    gap: 2rem;
 }
 
 .contaLayout h1 {
@@ -13,25 +14,15 @@
 }
 
 .contaLayout .titulos {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 3rem;
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 3rem;
 }
-
-.contaLayout .wrapper {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    margin-top: 3rem;
-    gap: 3rem;
-}
-
-.contaLayout .opcoesConta,
-.opcoesConfiguracao {
-    padding: 1.5rem 0.5rem 3rem 1.5rem;
+.contaLayout .opcoesConta, .contaLayout .opcoesConfiguracao{
     border: 2px solid var(--cor-2);
-    border-radius: 1.5rem;
+    border-radius: 2rem;
+    padding: 2rem;
 }
-
 .contaLayout .opcoesConta .opcao {
     display: flex;
     align-items: center;
@@ -53,29 +44,42 @@
     text-decoration-color: var(--cor-p3);
 }
 
-.contaLayout .opcoesConta .opcao:first-child .bg-img {
+.dados .opcoesConta .opcao:nth-child(1) .bg-img, 
+.seguranca .opcoesConta .opcao:nth-child(2) .bg-img,
+.notificacao .opcoesConta .opcao:nth-child(3) .bg-img {
     background-color: var(--cor-3);
 }
 
-.contaLayout .opcoesConta .opcao:first-child a {
+.dados .opcoesConta .opcao:nth-child(1), 
+.seguranca .opcoesConta .opcao:nth-child(2),
+.notificacao .opcoesConta .opcao:nth-child(3) {
     color: var(--cor-3);
 }
 
-.contaLayout .opcoesConta .opcao:first-child a:hover {
+.dados .opcoesConta .opcao:nth-child(1) a:hover, 
+.seguranca .opcoesConta .opcao:nth-child(2) a:hover,
+.notificacao .opcoesConta .opcao:nth-child(3) a:hover{
     text-decoration: none;
     font-weight: 400;
     cursor: default;
 }
 
-.contaLayout .configuracaoWrapper {
-    margin-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr 3fr;
-    height: auto;
+.contaLayout .configuracaoWrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+    padding-bottom: 1rem;
 }
 
-.contaLayout .informacao {
+.contaLayout .configuracaoWrapper:not(:last-child) {
+    border-bottom: 1px solid var(--cor-2);
+}
+
+.contaLayout .informacao p:nth-child(1) {
     font-weight: 500;
+}
+.contaLayout .dado{
+    color: var(--cor-10);
 }
 
 .contaLayout .cor {
@@ -94,44 +98,47 @@
     width: auto;
     height: 4rem;
 }
-
-@media (max-width: 800px) {
-    .contaLayout .configuracaoWrapper {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
+@media (max-width: 900px) {
+    .contaLayout{
+        grid-template-columns: 1fr;
     }
-    .contaLayout .opcoesConfiguracao{
+    .titulos:first-child{
+        margin-bottom: 0.1rem;
+    }
+    .contaLayout .opcoesConta .agrupador{
+        display: flex;
         gap: 20px;
     }
+    .contaLayout .opcoesConta .opcao .bg-img {
+        display: none;
+    }
+}
+@media (max-width: 650px) {
+    .contaLayout .editarBox{
+        display: grid;
     
+    }
+}
+@media (max-width: 500px) {
+    .contaLayout .configuracaoWrapper {
+        display: block;
+    }
     .contaLayout .editarBox {
         display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+        justify-content: flex-end; 
+        align-items: center;
         width: 100%;
-        
     }
-    .contaLayout .editarBox .botao{
-        max-width: 200px;
-    }
-
-    
-
-
 }
-
-
-@media (max-width: 500px) {
-    .contaConfig h1 {
-        margin-top: 4rem;
+@media (max-width: 400px) {
+    .contaLayout .opcoesConta .titulos p{
+        margin-bottom: 1.5rem;
     }
-
-    .contaConfig p {
-        margin-top: 0.3rem;
+    .contaLayout .opcoesConta .agrupador{
+        display: block;
+        gap: 0px;
     }
-
-    .contaConfig .wrapper {
-        margin-top: 2rem;
+    .contaLayout .opcoesConta .agrupador .opcao{
+        margin: 1rem 0px
     }
 }

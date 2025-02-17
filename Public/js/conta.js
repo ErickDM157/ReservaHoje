@@ -1,7 +1,7 @@
 function toggleVisibility() {
-    let elementos = document.querySelectorAll(".bg-img"); // Seleciona todos os elementos com a classe .bg-img
+    let elementos = document.querySelectorAll(""); // Seleciona todos os elementos com a classe .bg-img
     elementos.forEach((elemento) => {
-        if (window.matchMedia("(max-width: 700px)").matches) {
+        if (window.matchMedia("(max-width: 800px)").matches) {
             elemento.style.display = "none";
         } else {
             elemento.style.display = "block"; // Volta a exibir quando for maior que 800px
