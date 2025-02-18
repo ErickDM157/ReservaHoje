@@ -1,0 +1,15 @@
+.destinos{
+    margin-top: 6rem;
+}
+.destinos .wrapper{
+
+}
+.destinos .principal{
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+.destinos .principal img{
+    border-radius: 2rem;
+}

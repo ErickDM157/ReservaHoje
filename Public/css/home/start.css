@@ -26,3 +26,13 @@
     margin-bottom: 2rem;
 }
 
+@media (max-width: 800px) {
+    .start-bg{
+        margin-bottom: 12rem;
+    }
+}
+@media (max-width: 550px) {
+    .start-bg{
+        margin-bottom: 26rem;
+    }
+}

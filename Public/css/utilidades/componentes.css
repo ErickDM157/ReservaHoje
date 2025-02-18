@@ -78,5 +78,17 @@
 }
 
 @media (max-width: 800px) {
-    
+    .start .buscar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+    }
+}
+@media (max-width: 550px) {
+    .start .buscar{
+        display: block;
+    }
+    .start .buscar-botao{
+        margin-bottom: 1rem;
+    }
 }

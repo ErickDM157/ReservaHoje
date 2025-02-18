@@ -15,6 +15,7 @@
 /* Home */
 @import "./home/start.css";
 @import "./utilidades/etiqueta.css";
+@import "./home/destinos.css";
 
 /* Cadastro - Login */
 @import "./cadastro-login/formulario.css";
