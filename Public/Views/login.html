@@ -23,6 +23,17 @@
 
 <body class="login">
 
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      
     <main class="formulario-wrapper">
         <form class="formulario cadastro">
             <h2 class="font-1-tt-bold">Fazer Login</h2>
@@ -34,18 +45,19 @@
                 <div class="input-box">
                     <input type="password" id="password" placeholder="Insira sua senha" />
                     <p class="hidden alert">A senha deve conter pelo menos 8 caractéres</p>
+                    <a href="/Public/Views/senha/recuperarSenha.html" class="font-2-p">Esqueceu a senha?</a>
                 </div>
-                <button class="botao font-2-p" type="submit">Cadastrar</button>
+                <button href="/Public/indexp.html" class="botao font-2-p" type="submit">Login</button>
             </div>
         </form>
         <div class="form-coluna">
             <div class="text-box">
                 <h2 class="text1 font-1-tt-bold">Não tem uma conta?</h2>
                 <p class="text2 font-2-t">Crie uma conta agora e descubra as melhores opções de hospedagem. Reservar nunca foi tão fácil!</p>
-                <a href="./cadastro.php" class="form-coluna-botao botao font-2-t">Faça o Login</a>
+                <a href="/Public/Views/cadastro.html" class="form-coluna-botao botao font-2-t">Faça o Cadastro</a>
             </div>
         </div>
     </main>
-    <a class="cadastro-login-voltar font-2-t-bold" href="../index.php"><img class="seta" src="../img/icones/cadastro-login/seta.svg" alt="seta voltar">Início</a>
+    <a class="cadastro-login-voltar font-2-t-bold" href="/Public/indexp.html"><img class="seta" src="../img/icones/cadastro-login/seta.svg" alt="seta voltar">Início</a>
 </body>
 </html>

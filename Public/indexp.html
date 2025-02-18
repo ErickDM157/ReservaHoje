@@ -21,6 +21,17 @@
 </head>
 
 <body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      
     <header class="header-bg">
         <div class="header container">
             <div class="navbar">
@@ -35,12 +46,15 @@
             </div>
             <!--Usado para abrir o menu com (oppened)-->
             <nav class="font-2-p cor-0">
-                <a href=""><img src="/Public/img/icones/header/reservas.svg" alt="Ícone de Suas Reservas">Suas
+                <a href="/Public/Views/suasReservas/semReservas.html"><img src="/Public/img/icones/header/reservas.svg"
+                        alt="Ícone de Suas Reservas">Suas
                     Reservas</a>
-                <a href=""><img src="/Public/img/icones/header/favoritos.svg" alt="Ícone de Favoritos">Favoritos</a>
+                <a href="/Public/Views/favoritos/semFavoritos.html"><img src="/Public/img/icones/header/favoritos.svg"
+                        alt="Ícone de Favoritos">Favoritos</a>
                 <a href=""><img src="/Public/img/icones/header/notificacao.svg"
                         alt="Ícone de Notificações">Notificações</a>
-                <a href=""><img src="/Public/img/icones/header/usuario.svg" alt="Ícone de Usuário">Nome Usuário</a>
+                <a href="/Public/Views/conta/contaConfigOpcoes.html"><img src="/Public/img/icones/header/usuario.svg"
+                        alt="Ícone de Usuário">Nome Usuário</a>
             </nav>
         </div>
 
@@ -84,9 +98,57 @@
             <div class="etiqueta-bg">
                 <img src="/Public/img/icones/utilitarios/etiqueta.svg" alt="ícone etiqueta">
             </div>
-            <p class="font-2-p">Nossos afilados economizam até 15% em reservas em todo Brasil ao fazer login.</p>
+            <p class="font-2-p">Nossos afilados economizam até 15% em reservas em todo Brasil em Reserva</p>
         </div>
-        <a class="botao font-2-p" href="/Public/Views/login.html">Faça login</a>
+    </section>
+
+    <article class="destinos container">
+        <h2 class="font-1-st-bold">Destinos mais procurados</h2>
+        <p class="font-2-c">Opções mais procuradas pro viajantes no Brasil</p>
+        <div class="wrapper">
+            <div class="img-box">
+                <img src="/Public/img/fotos/home/destinos/destinos-img1.png" alt="Foto ilustrativa do destino 1">
+                <p class="font-2-p">Rio de Janeiro</p>
+            </div>
+            <div class="img-box">
+                <img src="/Public/img/fotos/home/destinos/destinos-img2.png" alt="Foto ilustrativa do destino 2">
+                <p class="font-2-p">São Paulo</p>
+            </div>
+            <div class="img-box">
+                <img src="/Public/img/fotos/home/destinos/destinos-img3.png" alt="Foto ilustrativa do destino 3">
+                <p class="font-2-p">Belo Horizonte</p>
+            </div>
+            <div class="img-box">
+                <img src="/Public/img/fotos/home/destinos/destinos-img4.png" alt="Foto ilustrativa do destino 4">
+                <p class="font-2-p">Salvador</p>
+            </div>
+            <div class="img-box">
+                <img src="/Public/img/fotos/home/destinos/destinos-img5.png" alt="Foto ilustrativa do destino 5">
+                <p class="font-2-p">Curitiba</p>
+            </div>
+            <div class="img-box">
+                <img src="/Public/img/fotos/home/destinos/destinos-img6.png" alt="Foto ilustrativa do destino 6">
+                <p class="font-2-p">Natal</p>
+            </div>
+        </div>
+    </article>
+
+    <section class="publicidade container">
+        <p class="texto font-2-t">Reserve sua estadia perfeita em até 12x sem juros</p>
+        <div class="wrapper">
+            <div class="vantagens">
+                <img src="/Public/img/fotos/home/vantagens/moon.svg" alt="ícone ilustrativo de lua">
+                <p class="font-2-p">Ganhe recompensas em diárias da sua estadia!</p>
+            </div>
+            <div class="vantagens">
+                <img src="/Public/img/fotos/home/vantagens/etiqueta.svg" alt="ícone ilustrativo de etiqueta">
+                <p class="font-2-p">Economize mais com os Preços para Associados.</p>
+            </div>
+            <div class="vantagens">
+                <img src="/Public/img/fotos/home/vantagens/calendario.svg" alt="ícone ilustrativo de calendario">
+                <p class="font-2-p">Opções de cancelamento grátis!</p>
+            </div>
+        </div>
     </section>
 
     <script src="./js/header.js"></script>

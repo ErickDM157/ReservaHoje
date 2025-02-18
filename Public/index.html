@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-be">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,19 @@
         rel="stylesheet">
 
 </head>
+
 <body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      
     <header class="header-bg">
         <div class="header container">
             <div class="navbar">
@@ -33,9 +46,9 @@
             </div>
             <!--Usado para abrir o menu com (oppened)-->
             <nav class="font-2-p cor-0">
-                <a href=""><img src="./img/icones/header/notificacao.svg" alt="Ícone de Notificações">Notificações</a>
-                <a class="botao" href="./Views/cadastro.php">Cadastre-se</a>
-                <a class="botao" href="./Views/login.php">Login</a>
+                <a href="/Public/index.html"><img src="./img/icones/header/notificacao.svg" alt="Ícone de Notificações">Notificações</a>
+                <a class="botao" href="/Public/Views/cadastro.html">Cadastre-se</a>
+                <a class="botao" href="/Public/Views/login.html">Login</a>
             </nav>
         </div>
     </header>
@@ -70,7 +83,7 @@
                 <a href="" class="botao font-2-t">Buscar</a>
             </div>
         </div>
-        
+
     </main>
 
     <section class="etiqueta container">
@@ -87,22 +100,50 @@
         <h2 class="font-1-st-bold">Destinos mais procurados</h2>
         <p class="font-2-c">Opções mais procuradas pro viajantes no Brasil</p>
         <div class="wrapper">
-            <div class="principal">
-                <div class="img-box">
-                    <img src="/Public/img/fotos/home/destinos/destinos-img1.png" alt="Foto ilustrativa do destino 1">
-                </div>
-                <div class="img-box">
-                    <img src="/Public/img/fotos/home/destinos/destinos-img2.png" alt="Foto ilustrativa do destino 2">
-                </div>
-                <div class="img-box">
-                    <img src="/Public/img/fotos/home/destinos/destinos-img3.png" alt="Foto ilustrativa do destino 3">
-                </div>
+            <div class="img-box">
+                <img src="/Public/img/fotos/home/destinos/destinos-img1.png" alt="Foto ilustrativa do destino 1">
+                <p class="font-2-p">Rio de Janeiro</p>
             </div>
-            <div class="secundario">
-    
+            <div class="img-box">
+                <img src="/Public/img/fotos/home/destinos/destinos-img2.png" alt="Foto ilustrativa do destino 2">
+                <p class="font-2-p">São Paulo</p>
+            </div>
+            <div class="img-box">
+                <img src="/Public/img/fotos/home/destinos/destinos-img3.png" alt="Foto ilustrativa do destino 3">
+                <p class="font-2-p">Belo Horizonte</p>
+            </div>
+            <div class="img-box">
+                <img src="/Public/img/fotos/home/destinos/destinos-img4.png" alt="Foto ilustrativa do destino 4">
+                <p class="font-2-p">Salvador</p>
+            </div>
+            <div class="img-box">
+                <img src="/Public/img/fotos/home/destinos/destinos-img5.png" alt="Foto ilustrativa do destino 5">
+                <p class="font-2-p">Curitiba</p>
+            </div>
+            <div class="img-box">
+                <img src="/Public/img/fotos/home/destinos/destinos-img6.png" alt="Foto ilustrativa do destino 6">
+                <p class="font-2-p">Natal</p>
             </div>
         </div>
     </article>
+
+    <section class="publicidade container">
+        <p class="texto font-2-t">Reserve sua estadia perfeita em até 12x sem juros</p>
+        <div class="wrapper">
+            <div class="vantagens">
+                <img src="/Public/img/fotos/home/vantagens/moon.svg" alt="ícone ilustrativo de lua">
+                <p class="font-2-p">Ganhe recompensas em diárias da sua estadia!</p>
+            </div>
+            <div class="vantagens">
+                <img src="/Public/img/fotos/home/vantagens/etiqueta.svg" alt="ícone ilustrativo de etiqueta">
+                <p class="font-2-p">Economize mais com os Preços para Associados.</p>
+            </div>
+            <div class="vantagens">
+                <img src="/Public/img/fotos/home/vantagens/calendario.svg" alt="ícone ilustrativo de calendario">
+                <p class="font-2-p">Opções de cancelamento grátis!</p>
+            </div>
+        </div>
+    </section>
 
     <script src="./js/header.js"></script>
 </body>

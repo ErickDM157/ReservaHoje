@@ -16,10 +16,13 @@
 @import "./home/start.css";
 @import "./utilidades/etiqueta.css";
 @import "./home/destinos.css";
+@import "./home/publi.css";
+@import "./home/tipoAcomodacao.css";
 
 /* Cadastro - Login */
 @import "./cadastro-login/formulario.css";
 @import "./cadastro-login/login.css";
+@import "./cadastro-login/senhaLayout.css";
 
 /* Reservas */
 @import "./reservas/suasReservas.css";

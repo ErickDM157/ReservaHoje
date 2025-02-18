@@ -1,0 +1,35 @@
+.senhaLayout{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--cor-p2);
+    color: var(--cor-0);
+    border-radius: 1.5rem;
+    max-width: 900px;
+    width: 100%;
+    min-height: 40rem;
+    height: auto;
+    padding: 2rem 1rem;
+    margin-top: 9rem;
+    font-weight: 400;
+}
+.senhaLayout .botao{
+    box-shadow: 0px 4px 4px rgba(202, 199, 199, 0.2);
+    max-width: 35rem;
+    background-color: none;
+    border: 1px solid var(--cor-0);
+}
+.senhaLayout .botao:hover{
+    background-color: var(--cor-p1);
+}
+.senhaLayout input{
+    max-width: 30rem;
+    padding: 0.4rem .6rem;
+    border-radius: 0.8rem;
+    height: 4rem;
+    border: none;
+    box-shadow: var(--cor-sombra);
+}
+.senhaLayout{
+    
+}

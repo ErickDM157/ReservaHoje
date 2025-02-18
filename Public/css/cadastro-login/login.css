@@ -15,6 +15,14 @@
 .login h2{
     margin: 80px 0px 50px 0px;
 }
+.login .formulario .campo-wrapper a{
+    color: var(--cor-5);
+}
+.login .formulario .campo-wrapper a:hover{
+    margin: 0.2rem, 1rem;
+    cursor: pointer;
+    text-decoration: underline;
+}
 .login .cadastro-login-voltar{
     color: var(--cor-p3);
 }

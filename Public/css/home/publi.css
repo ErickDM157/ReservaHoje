@@ -1,0 +1,56 @@
+
+.publicidade {
+    margin-top: 60px;
+    background-color: var(--cor-5);
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    min-height: 80px;
+    height: auto;
+    color: var(--cor-0);
+    width: calc(100% - 3rem);
+}
+
+.publicidade .texto {
+    text-align: left;
+    padding: 10px;
+}
+.publicidade .wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    overflow-x: auto;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+    padding: 10px 0;
+}
+
+.publicidade .vantagens {
+    padding: 15px;
+    flex: 0 0 auto;
+    width: 235px;
+    height: auto;
+    border-radius: 15px;
+    background-color: var(--cor-6);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 15px;
+}
+
+.publicidade .wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.publicidade .wrapper::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.publicidade img {
+    width: 60px;
+    height: 60px;
+    border-radius: 0px;
+}

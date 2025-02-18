@@ -2,14 +2,44 @@
     margin-top: 6rem;
 }
 .destinos .wrapper{
-
-}
-.destinos .principal{
     margin-top: 1.5rem;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+    justify-content: center;
+    align-items: center;
 }
-.destinos .principal img{
-    border-radius: 2rem;
+.destinos .wrapper .img-box {
+    position: relative;
+    box-shadow: var(--cor-sombra);
+}
+.destinos .wrapper p{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10; 
+    background-color: rgba(13, 96, 7, 0.25);
+    color: var(--cor-0);
+    padding: 0.5rem 1rem; 
+    border-top-left-radius: 1.5rem; 
+    border-bottom-right-radius: 1rem;
+    
+}
+.destinos .wrapper img{
+    border-radius: 1.5rem;
+    height: 20rem;
+    width: 100%;
+    max-width: 40rem;
+}
+
+
+@media (max-width: 900px) {
+    .destinos .wrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 450px) {
+    .destinos .wrapper{
+        grid-template-columns: 1fr;
+    }
 }

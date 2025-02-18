@@ -22,11 +22,22 @@
 </head>
 
 <body>
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+      
     <header class="header-bg">
         <div class="header container">
             <div class="navbar">
                 <div class="logo">
-                    <a href=""><img src="/Public/logo.svg" alt="logo"></a>
+                    <a href="/Public/indexp.html"><img src="/Public/logo.svg" alt="logo"></a>
                 </div>
                 <div class="menu-aberto">
                     <span></span>
@@ -43,7 +54,8 @@
                         alt="Ícone de Favoritos">Favoritos</a>
                 <a href=""><img src="/Public/img/icones/header/notificacao.svg"
                         alt="Ícone de Notificações">Notificações</a>
-                <a href=""><img src="/Public/img/icones/header/usuario.svg" alt="Ícone de Usuário">Nome Usuário</a>
+                <a href="/Public/Views/conta/contaConfigOpcoes.html"><img src="/Public/img/icones/header/usuario.svg"
+                        alt="Ícone de Usuário">Nome Usuário</a>
             </nav>
         </div>
 
@@ -60,7 +72,7 @@
                 <div class="informacoes">
                     <h3 class="font-2-t-bold">Seus Dados</h3>
                     <p class="font-2-p">Atualize suas informações pessoais</p>
-                    <a class="font-2-p" href="">Gerenciar dados pessoais</a>
+                    <a class="font-2-p" href="/Public/Views/conta/contaDados.html">Gerenciar dados pessoais</a>
                 </div>
             </div>
             <div class="opcao">
@@ -70,7 +82,7 @@
                 <div class="informacoes">
                     <h3 class="font-2-t-bold">Segurança</h3>
                     <p class="font-2-p">Altere suas configurações de segurança.</p>
-                    <a class="font-2-p" href="">Gerenciar segurança da conta</a>
+                    <a class="font-2-p" href="/Public/Views/conta/contaSeguranca.html">Gerenciar segurança da conta</a>
                 </div>
             </div>
             <div class="opcao">
@@ -78,14 +90,14 @@
                 <div class="informacoes">
                     <h3 class="font-2-t-bold">Notificações</h3>
                     <p class="font-2-p">Decida quais notificações quer receber</p>
-                    <a class="font-2-p" href="">Gerenciar notificações</a>
+                    <a class="font-2-p" href="/Public/Views/conta/contaNotificacao.html">Gerenciar notificações</a>
                 </div>
             </div>
             <div class="opcao">
                 <div class="bg-img"><img src="/Public/img/conta/sair.svg" alt="Sair ícone"></div>
                 <div class="informacoes">
                     <h3 class="font-2-t-bold">Sair</h3>
-                    <a class="font-2-p" href="">Sair da conta</a>
+                    <a class="font-2-p" href="/Public/index.html">Sair da conta</a>
                 </div>
             </div>
         </section>
