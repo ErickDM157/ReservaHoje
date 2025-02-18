@@ -39,7 +39,7 @@
     .semFavoritos .box img {
         max-width: 24rem;
     }    
-    .semFavoritos h1, p:first-of-type{
+    .semFavoritos h1,.semFavoritos p:first-of-type{
         margin-top: 2.4rem;
         max-width: 35rem;
     }
@@ -52,7 +52,7 @@
     .semFavoritos .box img {
         max-width: 16rem;
     }    
-    .semFavoritos h1, p:first-of-type{
+    .semFavoritos h1, .semFavoritos p:first-of-type{
         margin-top: 1.5rem;
         max-width: 20rem;
     }

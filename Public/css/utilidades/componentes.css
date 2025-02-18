@@ -12,6 +12,7 @@
     box-sizing: border-box;
     color: pointer;
     box-shadow: var(--cor-sombra);
+    text-wrap-mode: nowrap;
 }
 .botao:hover{
     background-color: var(--cor-p1);
@@ -74,4 +75,8 @@
 .buscar a.botao:hover{
     background-color: var(--cor-p0);
     cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    
 }

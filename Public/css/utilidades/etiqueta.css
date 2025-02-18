@@ -1,0 +1,46 @@
+.etiqueta{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--cor-p1);
+    padding: 1rem 2rem;
+    width: calc(100% - 3rem);
+    border-radius: 2rem;
+}
+.etiqueta .etiqueta-wrapper{
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+}
+.etiqueta .etiqueta-bg{
+    background-color: var(--cor-p2);
+    border-radius: 50%;
+    margin-right: 2rem;
+    max-width: max-content;
+    width: 100%;
+}
+.etiqueta .etiqueta-bg img{
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+}
+
+@media (max-width: 600px) {
+    .etiqueta .etiqueta-wrapper{
+        display: block;
+    }
+    .etiqueta .etiqueta-wrapper p{
+        margin-top: 20px;
+    }
+}
+@media (max-width: 450px) {
+    .etiqueta{
+        display: block;
+    }
+    .etiqueta .botao{
+        margin-top: 1rem;
+        max-width: 12rem;
+        width: 100%;
+    }
+}

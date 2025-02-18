@@ -53,7 +53,7 @@
     .semReservas {
         height: 45rem;
     }
-    .semReservas h1, p{
+    .semReservas h1, .semReservas p{
         margin-top: 2.4rem;
         max-width: 28rem;
     }
@@ -66,7 +66,7 @@
     .semReservas {
         height: 35rem;
     }
-    .semReservas h1, p{
+    .semReservas h1, .semReservas p{
         margin-top: 1.5rem;
         max-width: 18rem;
     }
