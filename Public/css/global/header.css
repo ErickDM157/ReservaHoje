@@ -1,14 +1,14 @@
+/* Estilos do header (conforme seu código atual) */
 .header-bg {
     background-color: var(--cor-p3);
     min-height: 46px;
-}
-.header {
+  }
+  .header {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.header .navbar {
+  }
+  .header .navbar {
     flex: 1;
     width: 100%;
     display: flex;
@@ -16,136 +16,159 @@
     align-items: center;
     min-height: 46px;
     cursor: pointer;
-}
-
-.header .logo img {
+  }
+  .header .logo img {
     width: 3.5rem;
     height: 3.5rem;
-}
-
-.header .menu-aberto {
+  }
+  .header .menu-aberto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 0.5rem;
     width: 2.6rem;
-    /*padrao para logos*/
     height: 2.6rem;
-}
-
-.header .menu-aberto span {
+  }
+  .header .menu-aberto span {
     display: block;
-    /*Para botar tamanho*/
     border-radius: 0.3rem;
     width: 2.6rem;
     height: 0.3rem;
-    background-color: var(--cor-1)
-}
-
-.header nav {
+    background-color: var(--cor-1);
+  }
+  .header nav {
     display: none;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
     padding-bottom: 3rem;
-}
-
-.header nav a {
+  }
+  .header nav a {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: .5rem;
+    gap: 0.5rem;
     padding: 1rem 0;
     width: 15rem;
     position: relative;
     background-color: var(--cor-p2);
     border-radius: 1rem;
-}
-
-.header nav a:hover{
+    text-decoration: none;
+    color: inherit;
+  }
+  .header nav a:hover {
     background-color: var(--cor-p1);
-    transition: ease-in-out .3s;
-}
-.header .botao{
+    transition: ease-in-out 0.3s;
+  }
+  .header .botao {
     background-color: var(--cor-0);
     height: 4.2rem;
-    padding: .1rem 0rem;  
+    padding: 0.1rem 0;
     border-radius: 1rem;
     color: var(--cor-p4);
-    transition: ease-in .3s;
-}
-.header .botao:hover{
-        background-color: var(--cor-2);
-}
-.header nav a.botao:hover::after{
+    transition: ease-in 0.3s;
+  }
+  .header .botao:hover {
+    background-color: var(--cor-2);
+  }
+  .header nav a.botao:hover::after {
     display: none;
-}
-
-.header nav img{
+  }
+  .header nav img {
     height: 1.8rem;
     width: auto;
-    
-}
-
-.header nav.aberto {
+  }
+  .header nav.aberto {
     display: flex;
-
-}
-@media (width > 400px) {
-    .header nav img{
-        height: 2.2rem;
-        height: 2.2rem;
+  }
+  @media (width > 400px) {
+    .header nav img {
+      height: 2.2rem;
     }
-    .header nav a{
-        width: 20rem;
+    .header nav a {
+      width: 20rem;
     }
-}
-@media (width > 800px) {
+  }
+  @media (width > 800px) {
     .header {
-        flex-direction: row;
+      flex-direction: row;
     }
-
     .header .menu-aberto {
-        display: none;
+      display: none;
     }
-
     .header nav {
-        display: flex;
-        flex-direction: row;
-        padding-bottom: 0;
+      display: flex;
+      flex-direction: row;
+      padding-bottom: 0;
     }
-    .header nav a{
-        border-radius: 0;
-        background-color: var(--cor-p3);
-        width: auto;
+    .header nav a {
+      border-radius: 0;
+      background-color: var(--cor-p3);
+      width: auto;
     }
-    .header nav a:hover{
-        background-color: var(--cor-p3);
+    .header nav a:hover {
+      background-color: var(--cor-p3);
     }
-    .header nav img{
-        height: 2.6rem;
-        height: 2.6rem;
+    .header nav img {
+      height: 2.6rem;
     }
-    .header nav a:hover::after{
-        width: calc(100% - 2.6rem);
-        display: flex;
-        align-items: self-end;
-        margin-left: 3.5rem;
+    .header nav a:hover::after {
+      width: calc(100% - 2.6rem);
+      display: flex;
+      align-items: self-end;
+      margin-left: 3.5rem;
     }
-    .header nav a:after{
-        content: "";
-        display: block;
-        height: 0.18rem;
-        width: 0%;
-        border-radius: 0.2rem;
-        background-color: var(--cor-0);
-        margin-top: 1.8rem;
-        transition: .3s;
-        position: absolute;
+    .header nav a:after {
+      content: "";
+      display: block;
+      height: 0.18rem;
+      width: 0%;
+      border-radius: 0.2rem;
+      background-color: var(--cor-0);
+      margin-top: 1.8rem;
+      transition: 0.3s;
+      position: absolute;
     }
-    .header .botao{
-        padding: 0 1rem;
-        height: 3.2rem;
+    .header .botao {
+      padding: 0 1rem;
+      height: 3.2rem;
     }
-}
+  }
+  
+  /* Estilos do pop-up do usuário */
+  .user-menu-container {
+    position: relative;
+    display: inline-block;
+  }
+  .user-popup {
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    background-color: var(--cor-p2);
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 0.5rem 0;
+    display: none;
+    flex-direction: column;
+    min-width: 150px;
+    z-index: 100;
+  }
+  .user-popup.show {
+    display: flex;
+  }
+  .user-popup .popup-item {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: var(--cor-0);
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    text-align: left;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+  }
+  .user-popup .popup-item:hover {
+    background-color: var(--cor-p1);
+  }
